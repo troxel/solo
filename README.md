@@ -5,14 +5,17 @@ Python module to ensure only a single instance of a program is running.
 
 To check for other instances of a python script that is running and stop these other instances (assuming you have privilge of course)
 
+```python
 import solo
 solo.chk_and_stopall(__file__)
+```
 
 To check for other instances of a python script that is running and stop self (sys.exit(-1)
 
+```python
 import solo
 solo.chk_and_stopself(__file__)
-
+```
 
 ## Dependencies
 
