@@ -23,7 +23,7 @@ def chk_and_stopall(file_name_in):
 
             pprocess.terminate()
 
-   time.sleep(1)
+   ##time.sleep(1)
    return(len(proc_lst))
 
 # --------------------------------------
@@ -58,7 +58,7 @@ def _get_proc_lst(file_name_in):
       if re.match(file_name_in,file_name_called):
 
          if pid == process.pid:
-            print('Skip self!')
+            ##print('Skip self!')
             continue
 
          proc_lst.append(process)
